@@ -4,18 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/index.css" />
-        <title>type-testing</title>
+        <title>Typing Tester Created By - Ghs Julian</title>
     </head>
     <body>
         <div class="header">
-            <select>
+            <select id="timerSelect">
                 <option value="0">Select Timer</option>
-                <option value="1">1 Minutes</option>
+                <option value="30">30 Second</option>
+                <option value="1">1 Minute</option>
                 <option value="5">5 Minutes</option>
                 <option value="10">10 Minutes</option>
+                <option value="15">15 Minutes</option>
                 <option value="20">20 Minutes</option>
             </select>
-            <p>Remaining Time : <b class="time"></b></p>
+            <p>Remaining Time: <b id="time">1:00 Second</b>s</p>
         </div>
         <div class="type-container" tabindex="0" id="textDisplay"></div>
         <div class="results" id="results">
@@ -27,9 +29,11 @@
                 </div>
                 <div class="stat-box">Errors: <span id="errors">0</span></div>
                 <div class="stat-box">
-                    Typed Words : <span id="words-size">10</span>
+                    Typed Words: <span id="words-size">0</span>
                 </div>
-                <div class="stat-box">Time: <span id="time">60</span>s</div>
+                <div class="stat-box">
+                    Time: <span id="timeDisplay">60</span>s
+                </div>
             </div>
             <button id="resetButton">Try Again</button>
         </div>
